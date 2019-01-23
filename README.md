@@ -7,7 +7,7 @@ This is simple console application in Python 3 that displayes photo ids and titl
 
 To run please save file to your folder. Then from command line 
 
-C:\your-home-folde> cd to-your-folder-containing-photo-album-file
+C:\your-home-folder> cd to-your-folder-containing-photo-album-file
 
 Then type 
 

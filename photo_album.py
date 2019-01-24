@@ -1,23 +1,34 @@
 
 import sys
-import urllib.request, json
+from data_fetcher import display_album
 
-def photo_album(id):
-    """photo album - take the id from the keyboard and print photo id and titles on the console
+def main():
+    """ main function -- checks for the valid id and excute photo_album
 
-    :param id: An integer id
     :return:
     """
-    with urllib.request.urlopen("https://jsonplaceholder.typicode.com/photos?albumId=" + str(id)) as url:
-        data = json.loads(url.read().decode())
+    #House keeping
+    # The client should supply the argument albumid
 
-    for element in data:
-        if element['id']:
-            print('['+ str(element['id']) + ']'  + ' '+ element['title'])
+
+    input_id = None
+
+    try:
+        #only send integer id
+        assert len(sys.argv) == 2
+        input_id = int(sys.argv[1])
+        assert (isinstance(input_id, int)  and input_id > 0)
+        for element in display_album(input_id):
+            print(element)
+    except AssertionError:
+        if input_id:
+            print(f'invalid id!  Your input:{input_id} is not positive integer! Try again..')
+        else:
+            print('Oops! You need to provide argument. Try again ..')
 
 if __name__ =="__main__":
-    id = int(sys.argv[1])
-    photo_album(id)
+    main()
+
 
 
 

@@ -25,11 +25,11 @@ Once activated please install dependencies from pip
 
 Once installed please excute 
 
-  pytest --cov=test
+   pytest --cov=test
 
 to run the test. To see the result 
 
-  python photo-album.py 2 
+   python photo-album.py 2 
 
 This should  give you 
 

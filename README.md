@@ -2,16 +2,34 @@
 
 ##LT Technical Showcases
 
+Thank for your review. I misunderstood the requirement. 
 
 This is simple console application in Python 3 that displayes photo ids and titles in an album from url  https://jsonplaceholder.typicode.com/photos. 
 
-To run please save file to your folder. Then from command line 
 
-C:\your-home-folder> cd to-your-folder-containing-photo-album-file
+To run please save the whole repository to local machine folder. Then from command line type 
 
-Then type 
+C:\your-home-folder> cd to-your-folder-containing-repository
 
-C:\your-home-folder> python photo-album.py 2 
+Then create viretual enviroment by  excuting 
+
+    python -m venv env
+
+Once done then activate the env by running the command 
+
+    env\Scripts\activate
+
+Once activated please install dependencies from pip 
+
+    pip install -r requirements.txt 
+
+Once installed please excute 
+
+  pytest --cov=test
+
+to run the test. To see the result 
+
+  python photo-album.py 2 
 
 This should  give you 
 

@@ -1,11 +1,8 @@
-# showcase
-
-##LT Technical Showcases
-
-Thank for your review. I misunderstood the requirement. 
+## Photo album 
 
 This is simple console application in Python 3 that displayes photo ids and titles in an album from url  https://jsonplaceholder.typicode.com/photos. 
 
+## The following instruction is for window users
 
 To run please save the whole repository to local machine folder. Then from command line type 
 
